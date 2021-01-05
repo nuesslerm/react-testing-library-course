@@ -10,7 +10,7 @@ afterEach(() => {
   jest.clearAllMocks()
 })
 
-it('renders a form with title, content, tags, and a submit button', () => {
+test('renders a form with title, content, tags, and a submit button', () => {
   mockSavePost.mockResolvedValueOnce()
   const fakeUser = {id: 'user-1'}
   render(<Editor user={fakeUser} />)
